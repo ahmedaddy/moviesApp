@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
-import logo from "../images/logo.png";
+import logo from "../images/profile.png";
 import { useDispatch } from "react-redux";
 import { getAllMovie, movieSearsh } from "../redux/action/moviesAction";
 

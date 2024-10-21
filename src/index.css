@@ -3,12 +3,12 @@ body {
 }
 .color-body {
   background-color: #555555;
-  height: 100%;
+  min-height: 100vh;
 }
 .nav-style {
   height: 90px;
   width: 1440px;
-  background-color: #b45b35;
+  background-color: #a8a8a8;
 }
 
 .logo {
@@ -23,12 +23,12 @@ body {
 .search input {
   height: 40px;
   text-indent: 25px;
-  border-radius: 20px;
+  border-radius: 6px;
 }
 
 .search input:focus {
   box-shadow: none;
-  border: 2px solid red;
+  outline: 2px solid #555555;
 }
 .search .fa-search {
   position: absolute;
@@ -92,12 +92,12 @@ body {
 
 .card-detalis {
   height: 370px;
-  border-radius: 20px;
+  border-radius: 8px;
   background-color: #f8f8f8;
 }
 .card-story {
   height: 300px;
-  border-radius: 20px;
+  border-radius: 8px;
   background-color: #f8f8f8;
 }
 .img-movie {

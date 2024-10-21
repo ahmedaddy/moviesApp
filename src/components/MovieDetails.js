@@ -29,16 +29,16 @@ const MovieDetails = () => {
             />
             <div className="justify-content-center text-center  mx-auto">
               <p className="card-text-details border-bottom">
-                اسم الفيلم: {movie.title}
+                Title: {movie.title}
               </p>
               <p className="card-text-details border-bottom">
-                تاريخ الفيلم :{movie.release_date}
+                Release Date :{movie.release_date}
               </p>
               <p className="card-text-details border-bottom">
-                عدد المقيمين : {movie.vote_count}
+                Vote Count : {movie.vote_count}
               </p>
               <p className="card-text-details border-bottom">
-                التقييم :{movie.vote_average}
+                Vote Average :{movie.vote_average}
               </p>
             </div>
           </div>
@@ -49,9 +49,9 @@ const MovieDetails = () => {
         <Col md="12" xs="12" sm="12" className="mt-1 ">
           <div className="card-story  d-flex flex-column align-items-start">
             <div className="text-end p-4 ">
-              <p className="card-text-title border-bottom">القصة:</p>
+              <p className="card-text-title border-bottom">The story:</p>
             </div>
-            <div className="text-end px-2">
+            <div className="text-start px-2">
               <p className="card-text-story">{movie.overview}</p>
             </div>
           </div>
@@ -66,18 +66,18 @@ const MovieDetails = () => {
         >
           <Link to="/">
             <button
-              style={{ backgroundColor: "#b45b35", border: "none" }}
+              style={{ backgroundColor: "#03b2eb", border: "none" }}
               className="btn btn-primary mx-2"
             >
-              عوده للرئيسيه
+              Back to main page
             </button>
           </Link>
-          <a href={movie.homepage}>
+          <a href={movie.homepage} target="_blank">
             <button
-              style={{ backgroundColor: "#b45b35", border: "none" }}
+              style={{ backgroundColor: "#03b2eb", border: "none" }}
               className="btn btn-primary"
             >
-              مشاهده الفيلم
+              Watch The Movie
             </button>
           </a>
         </Col>
